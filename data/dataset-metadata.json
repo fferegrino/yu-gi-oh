@@ -1,0 +1,258 @@
+{
+    "title":"Yu-Gi-Oh! Cards",
+    "subtitle":"All the Yu-Gi-Oh! cards available at https://ygoprodeck.com/",
+    "description":"All the cards from your popular trading card game Yu-Gi-Oh.\n\nInformation downloaded from https://ygoprodeck.com/ via its API.\n\nThe literal and graphical information presented on this dataset Yu-Gi-Oh!, including card images, the attribute, level/rank and type symbols, and card text, is copyright of 4K Media Inc, a subsidiary of Konami Digital Entertainment, Inc.",
+    "id":"ioexception/yugioh-cards",
+    "licenses":[
+        {
+            "name":"CC-BY-SA-3.0"
+        }
+    ],
+    "resources":[
+        {
+            "path":"cards.csv",
+            "description":"All the available cards",
+            "schema":{
+                "fields":[
+                    {
+                        "name":"id",
+                        "type":"number",
+                        "description":"ID or Passocde of the card."
+                    },
+                    {
+                        "name":"name",
+                        "type":"string",
+                        "description":"Name of the card"
+                    },
+                    {
+                        "name":"type",
+                        "type":"string",
+                        "description":"Type of the card"
+                    },
+                    {
+                        "name":"desc",
+                        "type":"string",
+                        "description":"Card description or effect"
+                    },
+                    {
+                        "name":"atk",
+                        "type":"number",
+                        "description":"ATK value of the card"
+                    },
+                    {
+                        "name":"def",
+                        "type":"number",
+                        "description":"DEF value of the card"
+                    },
+                    {
+                        "name":"level",
+                        "type":"number",
+                        "description":"Level or rank of the card"
+                    },
+                    {
+                        "name":"race",
+                        "type":"string",
+                        "description":"The card race which is officially called type (Spellcaster, Warrior, Insect, etc)."
+                    },
+                    {
+                        "name":"attribute",
+                        "type":"string",
+                        "description":"The attribute of the card"
+                    },
+                    {
+                        "name":"scale",
+                        "type":"number",
+                        "description":"The pendulum scale value"
+                    },
+                    {
+                        "name":"archetype",
+                        "type":"string",
+                        "description":"The Archetype that the card belongs to"
+                    },
+                    {
+                        "name":"linkval",
+                        "type":"number",
+                        "description":"The Link Value of the card if it's of type \"Link Monster\"."
+                    },
+                    {
+                        "name":"linkmarkers",
+                        "type":"string",
+                        "description":"The Link Markers of the card if it's of type \"Link Monster\". This information is stored as an array"
+                    },
+                    {
+                        "name":"image_url",
+                        "type":"string",
+                        "description":"The main artwork image"
+                    },
+                    {
+                        "name":"image_url_small",
+                        "type":"string",
+                        "description":"The main artwork image in a smaller version"
+                    },
+                    {
+                        "name":"ban_tcg",
+                        "type":"string",
+                        "description":"The status of the card on the TCG Ban List"
+                    },
+                    {
+                        "name":"ban_ocg",
+                        "type":"string",
+                        "description":"The status of the card on the OCG Ban List"
+                    },
+                    {
+                        "name":"ban_goat",
+                        "type":"string",
+                        "description":"The status of the card on the GOAT Format Ban List"
+                    },
+                    {
+                        "name":"staple",
+                        "type":"string",
+                        "description":"Flag showing wether the card is considered a staple"
+                    },
+                    {
+                        "name":"views",
+                        "type":"number",
+                        "description":"The number of times a card has been viewed in the YGOPRODeck website"
+                    },
+                    {
+                        "name":"viewsweek",
+                        "type":"number",
+                        "description":"The number of times a card has been viewed in the YGOPRODeck website during the current week"
+                    },
+                    {
+                        "name":"upvotes",
+                        "type":"number",
+                        "description":"The number of upvotes a card has"
+                    },
+                    {
+                        "name":"downvotes",
+                        "type":"number",
+                        "description":"The number of downvotes a card has"
+                    },
+                    {
+                        "name":"formats",
+                        "type":"string",
+                        "description":"The available formats the card is in, using pipe as separator"
+                    },
+                    {
+                        "name":"treated_as",
+                        "type":"string",
+                        "description":"If the card is treated as another card"
+                    },
+                    {
+                        "name":"tcg_date",
+                        "type":"string",
+                        "description":"The original date the card was released in the TCG"
+                    },
+                    {
+                        "name":"ocg_date",
+                        "type":"string",
+                        "description":"The original date the card was released in the OCG"
+                    },
+                    {
+                        "name":"konami_id",
+                        "type":"number",
+                        "description":"Konami ID"
+                    },
+                    {
+                        "name":"has_effect",
+                        "type":"string",
+                        "description":"If the card has an actual text effect"
+                    }
+                ]
+            }
+        },
+        {
+            "path":"cards_variants.csv",
+            "description":"A table of all the variants",
+            "schema":{
+                "fields":[
+                    {
+                        "name":"original",
+                        "type":"number",
+                        "description":"Original card ID"
+                    },
+                    {
+                        "name":"variant",
+                        "type":"number",
+                        "description":"Variant card ID"
+                    }
+                ]
+            }
+        },
+        {
+            "path":"cards_cardsets.csv",
+            "description":"A file establishing the relationship between cards and datasets",
+            "schema":{
+                "fields":[
+                    {
+                        "name":"card_id",
+                        "type":"number",
+                        "description":"Card ID"
+                    },
+                    {
+                        "name":"set_id",
+                        "type":"string",
+                        "description":"A hash representing the set ID"
+                    },
+                    {
+                        "name":"set_code",
+                        "type":"string",
+                        "description":"A unique identifier of the card in the set"
+                    },
+                    {
+                        "name":"set_rarity",
+                        "type":"string",
+                        "description":"The card's rarity in the set"
+                    },
+                    {
+                        "name":"set_rarity_code",
+                        "type":"string",
+                        "description":"A shorthand for card's rarity in the set"
+                    }
+                ]
+            }
+        },
+        {
+            "path":"cardsets.csv",
+            "description":"A file containing all card sets",
+            "schema":{
+                "fields":[
+                    {
+                        "name":"id",
+                        "type":"string",
+                        "description":"A hash id that uniquely identifies the card set"
+                    },
+                    {
+                        "name":"set_name",
+                        "type":"string",
+                        "description":"The name of the set"
+                    },
+                    {
+                        "name":"set_code",
+                        "type":"string",
+                        "description":"The code of the set"
+                    },
+                    {
+                        "name":"num_of_cards",
+                        "type":"number",
+                        "description":"The number of cards this set contains"
+                    },
+                    {
+                        "name":"tcg_date",
+                        "type":"string",
+                        "description":"Release of the set in the TCG"
+                    }
+                ]
+            }
+        }
+    ],
+    "keywords":[
+        "Arts and Entertainment",
+        "Games",
+        "Anime and Manga",
+        "Board Games",
+        "Card Games",
+        "Tabular Data"
+    ]
+}
