@@ -3461,6 +3461,7 @@ card_id,set_id,set_code,set_rarity,set_rarity_code
 9603356,610fa05ae2b971af95aa19408657ad7b,ENE06,Common,(C)
 9603356,9ded067771dd7a4044333496beb490fd,068,Common,(C)
 9603356,9ded067771dd7a4044333496beb490fd,EN068,Common,(C)
+9608555,56402d217bf3eb8a4a7b7abbbfdd8cc7,EN007,Quarter Century Secret Rare,
 9608555,bb49627c5be3da6f8993300fb5249a76,EN025,Ultra Rare,(UR)
 9617996,4f01ece8166b338919a6203eb5dca93e,EN043,Common,(C)
 9617996,cb6ba8c143c17ecfa39d6d2fd18d70fb,EN106,Common,(C)
@@ -11761,6 +11762,7 @@ card_id,set_id,set_code,set_rarity,set_rarity_code
 33365932,cec6ad7519290b9ebe5e8233e2c0f3a4,ENH07,Common,(C)
 33391067,58881a6bb521c7c962374788330f3023,EN023,Ultra Rare,(UR)
 33393090,ce4ea277b06e39d390ab4a89f3e7f18c,EN007,Secret Rare,(ScR)
+33396948,56402d217bf3eb8a4a7b7abbbfdd8cc7,EN002,Quarter Century Secret Rare,
 33396948,58881a6bb521c7c962374788330f3023,EN101,Starlight Rare,(StR)
 33396948,5bdf36b3420f850c92d70fec32712201,EN006,Rare,(R)
 33396948,74c1e2a9c8b12f91a2754a2db657debc,EN022,Ultra Rare,(UR)
@@ -20901,6 +20903,7 @@ card_id,set_id,set_code,set_rarity,set_rarity_code
 59071624,cb403c1c3e075dbf7db5a1635a299677,EN068,Super Rare,(SR)
 59094601,0ae37fc5dd293c7ab5dd50776e70587e,EN273,Ultra Rare,(UR)
 59120809,4c703fdff94dda53e4d3c173d8d14609,EN049,Secret Rare,(ScR)
+59123194,56402d217bf3eb8a4a7b7abbbfdd8cc7,EN010,Quarter Century Secret Rare,
 59123194,a1c14cc8da23f716d0e8e532bfb6c455,EN047,Ultra Rare,(UR)
 59123194,b8e0e89213ecc4c89954407b2bf65626,EN031,Super Rare,(SR)
 59123937,ead941910d54f03db9be48bc41a94357,EN017,Common,(C)
@@ -24156,6 +24159,7 @@ card_id,set_id,set_code,set_rarity,set_rarity_code
 69025477,a3d60a924aaac2198910dd569b21264f,EN229,Common,(C)
 69025477,c570582574a239f2ee1d6861c73e674d,EN003,Common,(C)
 69025477,f4b6bdbdc3361f9317a9ffdea5f6d8ce,EN090,Ultra Rare,(UR)
+69031175,56402d217bf3eb8a4a7b7abbbfdd8cc7,EN015,Quarter Century Secret Rare,
 69031175,58881a6bb521c7c962374788330f3023,EN099,Starlight Rare,(StR)
 69031175,7c0ee7fabbf9093b04eb661478db5561,EN132,Secret Rare,(ScR)
 69031175,b10b4352c55dc9fbb5d188ea621ac5c5,EN077,Gold Rare,(GUR)
@@ -24584,6 +24588,7 @@ card_id,set_id,set_code,set_rarity,set_rarity_code
 70095154,424cd414aa7c40f77530cf69f4102635,EN039,Common,(C)
 70095154,424cd414aa7c40f77530cf69f4102635,EN039,Mosaic Rare,(MSR)
 70095154,47985f00967ea887b68a5e69052b13d1,ENB01,Common,(C)
+70095154,56402d217bf3eb8a4a7b7abbbfdd8cc7,EN005,Quarter Century Secret Rare,
 70095154,5a701245b4f90fecdf5d4875989c2888,ENY04,Common,(C)
 70095154,610fa05ae2b971af95aa19408657ad7b,ENI28,Common,(C)
 70095154,610fa05ae2b971af95aa19408657ad7b,ENI28,Secret Rare,(ScR)
@@ -25836,6 +25841,7 @@ card_id,set_id,set_code,set_rarity,set_rarity_code
 73580471,3b24ac7a126a48b8cc5cd4112179cc32,EN039,Ultimate Rare,(UtR)
 73580471,3b24ac7a126a48b8cc5cd4112179cc32,EN039,Ultra Rare,(UR)
 73580471,4285fe6083db6af5bf9f55eeafbcfa37,EN028,Common,(C)
+73580471,56402d217bf3eb8a4a7b7abbbfdd8cc7,EN014,Quarter Century Secret Rare,
 73580471,723a480a9776e44858d56efd8b2e9c19,EN100,Starlight Rare,(StR)
 73580471,7c0ee7fabbf9093b04eb661478db5561,EN099,Common,(C)
 73580471,96b30f7b59ec2e0fb430c0ce1354f00f,EN077,Ultra Rare,(UR)
@@ -25985,6 +25991,7 @@ card_id,set_id,set_code,set_rarity,set_rarity_code
 73879377,b32d3069a055a23ea9aa0b03cdb8f04f,EN027,Common,(C)
 73879377,cec6ad7519290b9ebe5e8233e2c0f3a4,ENC08,Common,(C)
 73879377,cec6ad7519290b9ebe5e8233e2c0f3a4,ENC08,Secret Rare,(ScR)
+73879377,cf44fa9d546794b340b30e686a190a8f,ENDE1,Secret Rare,(ScR)
 73879377,ddf9c624d26944f73cb8bf174e184d81,EN014,Common,(C)
 73879377,eb2bd307211b77650d375957c150172d,EN012,Super Rare,(SR)
 73881652,2280df8b0216253b8059876bc8745f43,EN071,Common,(C)
@@ -28077,6 +28084,7 @@ card_id,set_id,set_code,set_rarity,set_rarity_code
 79853073,e51ff6ff96ea66dffab8252daf8b9f95,EN013,Common,(C)
 79856792,13d0344eebc2d41909f4e2fb1588adfc,EN005,Secret Rare,(ScR)
 79856792,51eeba1e5fd0972879c04cd0bc04ad7b,EN099,Common,(C)
+79856792,56402d217bf3eb8a4a7b7abbbfdd8cc7,EN004,Quarter Century Secret Rare,
 79856792,a2b136a3bb0d670446aee90c91f884cb,EN041,Ultra Rare,(UR)
 79856792,a3d60a924aaac2198910dd569b21264f,EN162,Ultra Rare,(UR)
 79856792,b32d3069a055a23ea9aa0b03cdb8f04f,EN043,Common,(C)
@@ -32575,7 +32583,6 @@ card_id,set_id,set_code,set_rarity,set_rarity_code
 93382620,327d59d3112082748441132b4cce3a5f,EN144,Common,(C)
 93382620,424cd414aa7c40f77530cf69f4102635,EN176,Common,(C)
 93382620,424cd414aa7c40f77530cf69f4102635,EN176,Mosaic Rare,(MSR)
-93382620,4b3a87e8b78b5b86eab78614dd2589f9,ENDE1,Secret Rare,(ScR)
 93382620,5c47e88732f386f382d2e2dae097a44f,EN054,Rare,(R)
 93382620,7c6e77a5a83de29d749226ae0eb952f2,EN147,Secret Rare,(ScR)
 93382620,8272aa7c271a31209868ece93db778b8,EN033,Common,(C)
@@ -32675,6 +32682,7 @@ card_id,set_id,set_code,set_rarity,set_rarity_code
 93717133,17943d7262d755da8a0d683f3e8d9a2e,EN039,Super Rare,(SR)
 93717133,3d0e7c673619d3e6894843ba6759630a,EN008,Common,(C)
 93717133,3d0e7c673619d3e6894843ba6759630a,EN008,Starfoil Rare,(SFR)
+93717133,56402d217bf3eb8a4a7b7abbbfdd8cc7,EN012,Quarter Century Secret Rare,
 93717133,7721dab6cc1ab0133473a87a701ecf54,EN003,Secret Rare,(ScR)
 93717133,7c291aeddb69fc1e37dd23eb1aac3a42,EN011,Ghost Rare,(GR)
 93717133,7c291aeddb69fc1e37dd23eb1aac3a42,EN011,Ultimate Rare,(UtR)
