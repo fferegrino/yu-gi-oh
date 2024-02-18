@@ -294,7 +294,7 @@ fdd13ad84bdd9683494dc76350b2d95c,Raging Battle,RGBT,100,2009-05-12
 c3e23064a4dfd57f88c9c8f0f676ffc4,Yu-Gi-Oh! GX Volume 3 promotional card,YG03,1,2009-06-02
 a9e749135da086d24aa88f2cb23d6313,Starter Deck: Yu-Gi-Oh! 5D's 2009,5DS2,43,2009-06-09
 9f089fe586ad09a604cbbe692408e63f,Yu-Gi-Oh! R Volume 1 promotional card,YR01,1,2009-06-10
-92a1dc5785bea53ea64685ad0be839b2,Duel Terminal - Preview Wave 2,DTP1,18,2009-06-20
+92a1dc5785bea53ea64685ad0be839b2,Duel Terminal - Preview Wave 2,DTP1,31,2009-06-20
 c7614358320c374db113939b6bdecaff,Raging Battle: Special Edition,RGBT,2,2009-06-23
 ee7d09a2f9ef687194f4c1092792e4fb,Duelist Pack: Yugi,DPYG,30,2009-07-07
 a399605f0dad9ea9479460414f6a2c8a,Retro Pack 2,RP02,101,2009-07-28
@@ -894,7 +894,7 @@ d0b83c8d1ff13a795c05cf0acfad5c0d,OTS Tournament Pack 17 (POR),OP17,35,2021-10-14
 119fcb4e75a7f02d5b29a2b23b851462,Legendary Duelists: Synchro Storm,LED8,56,2021-10-28
 660e75777c6e9408b97f7042dfa4adeb,The Lost Art Promotion 2021 K,LART,1,2021-11-01
 09b9e670c1677464aa4950091c8577b2,Burst of Destiny,BODE,101,2021-11-04
-9abce9ef0212d134c70a05c322b2dd94,Maximum Gold: El Dorado,MGED,151,2021-11-18
+9abce9ef0212d134c70a05c322b2dd94,Maximum Gold: El Dorado,MGED,152,2021-11-18
 e07883b375d6093066fdb83f22465787,Blue-Eyes Alternative White Dragon Sweepstakes,SBPR,1,2021-12-01
 03e9eb850691fb231866249eeaa53d61,The Lost Art Promotion 2021 L,LART,1,2021-12-01
 ce4ea277b06e39d390ab4a89f3e7f18c,Brothers of Legend,BROL,95,2021-12-02
@@ -943,7 +943,7 @@ cb212e505ea583df553800829f724a73,The Lost Art Promotion 2023 F,LART,1,2023-06-01
 50f660730df483f0e11d69e2df3545fe,Wild Survivors,WISU,60,2023-06-01
 c6406398b1caf5641982075a3224429e,Battles of Legend: Monstrous Revenge,BLMR,104,2023-06-22
 05061bf65fb74fd2947cd11027d50e00,OTS Tournament Pack 22,OP22,25,2023-07-19
-1207a8b2f774090ec294ce41782874bc,Duelist Nexus,DUNE,99,2023-07-27
+1207a8b2f774090ec294ce41782874bc,Duelist Nexus,DUNE,100,2023-07-27
 bfa22de6662a03ecc1f3da103a03fc4e,The Lost Art Promotion 2023 H,LART,1,2023-08-01
 1283191769e7792b25b074809d43a841,Legendary Duelists: Soulburning Volcano,LD10,62,2023-08-10
 d8a9cfb70839915fcea1465fc6d714e8,Speed Duel: Streets of Battle City,SBC1,193,2023-08-24
@@ -954,14 +954,16 @@ ebe013615ad84378dde1da9a117c1ae6,The Pot Collection,TBC1,15,2023-09-01
 56402d217bf3eb8a4a7b7abbbfdd8cc7,25th Anniversary Tin: Dueling Heroes,TN23,16,2023-09-07
 a044f1d51eeaaab32a0ab95712836f19,25th Anniversary Tin: Dueling Heroes Mega Pack,MP23,283,2023-09-07
 ca15fef067d241a83dd8016ef0600f91,Structure Deck: The Crimson King,SDCK,47,2023-09-21
-e606bbaf04b9c79f2b0504c7ea01c580,Age of Overlord,AGOV,99,2023-10-19
+e606bbaf04b9c79f2b0504c7ea01c580,Age of Overlord,AGOV,100,2023-10-19
 0f9b72aaa5f16958bafed45b15ef3bf6,OTS Tournament Pack 23,OP23,27,2023-10-25
 a5cea1e77acd3ef56295a1f13c175de9,25th Anniversary Rarity Collection,RA01,78,2023-11-02
 a0431d1e982ccf06eb9eaa54f9334dd4,Valiant Smashers,VASM,60,2023-11-16
 b720717a4c88e63a5d561f2cc18689d1,Structure Deck: Fire Kings,SR14,48,2023-12-07
 4962ce2eefdcb976ce42041217783326,Maze of Millennia,MZMI,85,2024-01-18
 f1182329a942291f28342309d660276c,2-Player Starter Set,STAX,88,2024-01-26
-25952fd36e0938a5d447087427aa78cd,Phantom Nightmare,PHNI,41,2024-02-08
-f90aeb9693b42a2a0ebd4e66f41bde66,Adidas collaboration card,ADC1,1,
-1c32fc0081eeb46f4f28777408869ce9,The Lost Art Promotion (series),LART,62,
-3f21534f4cb83b201123e215c240ae85,The Lost Art Promotion 2023 G,LART,1,
+25952fd36e0938a5d447087427aa78cd,Phantom Nightmare,PHNI,101,2024-02-08
+f90aeb9693b42a2a0ebd4e66f41bde66,Adidas collaboration card,ADC1,1,2024-02-14
+05aeb56737ca1678d2fb1d6dbfcd1e92,OTS Tournament Pack 24,OP24,27,2024-02-14
+1c32fc0081eeb46f4f28777408869ce9,The Lost Art Promotion (series),LART,62,2024-02-14
+3f21534f4cb83b201123e215c240ae85,The Lost Art Promotion 2023 G,LART,1,2024-02-14
+a958f842061f0c256334ebf7813f3cb5,Battles of Legend: Chapter 1,BLC1,163,2024-02-22
