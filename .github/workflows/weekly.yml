@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "0 12 * * 0"
   workflow_dispatch:
+    inputs:
+      source:
+        description: Where to read the current dataset from
+        type: choice
+        options: [huggingface, kaggle]
+        default: huggingface
 
 permissions:
   contents: read
@@ -18,9 +24,29 @@ jobs:
     timeout-minutes: 30
     steps:
     - uses: actions/checkout@v7
-    - uses: fferegrino/kaggle-dataset-refresh@v1
+    - uses: fferegrino/dataset-sync/fetch@v1
       with:
-        dataset: ioexception/yugioh-cards
-        working-directory: data
-        command: python ../download.py
+        # Scheduled runs have no inputs, so they always read from Hugging Face.
+        from: ${{ inputs.source || 'huggingface' }}
+        huggingface-dataset: fferegrino/yugioh-cards
+        kaggle-dataset: ioexception/yugioh-cards
+        kaggle-username: ioexception
+        kaggle-key: ${{ secrets.KAGGLE_KEY }}
+    - name: Set up Python 3.13
+      uses: actions/setup-python@v7
+      with:
+        python-version: "3.13"
+    - name: Download cards
+      run: |
+        python -m pip install --upgrade pip==26.2.1
+        pip install -r requirements.txt
+        cd data && python ../download.py
+    - uses: fferegrino/dataset-sync/publish@v1
+      with:
+        huggingface-dataset: fferegrino/yugioh-cards
+        huggingface-card: dataset-card.md
+        kaggle-dataset: ioexception/yugioh-cards
+        kaggle-metadata: dataset-metadata.json
+        huggingface-token: ${{ secrets.HF_TOKEN }}
+        kaggle-username: ioexception
         kaggle-key: ${{ secrets.KAGGLE_KEY }}
