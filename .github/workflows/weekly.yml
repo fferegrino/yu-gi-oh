@@ -28,7 +28,7 @@ jobs:
       with:
         # Scheduled runs have no inputs, so they always read from Hugging Face.
         from: ${{ inputs.source || 'huggingface' }}
-        huggingface-dataset: fferegrino/yugioh-cards
+        huggingface-dataset: feregrino/yugioh-cards
         kaggle-dataset: ioexception/yugioh-cards
         kaggle-username: ioexception
         kaggle-key: ${{ secrets.KAGGLE_KEY }}
@@ -43,7 +43,7 @@ jobs:
         cd data && python ../download.py
     - uses: fferegrino/dataset-sync/publish@v1
       with:
-        huggingface-dataset: fferegrino/yugioh-cards
+        huggingface-dataset: feregrino/yugioh-cards
         huggingface-card: dataset-card.md
         kaggle-dataset: ioexception/yugioh-cards
         kaggle-metadata: dataset-metadata.json

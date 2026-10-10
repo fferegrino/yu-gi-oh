@@ -30,7 +30,7 @@ All the Yu-Gi-Oh! cards available on [YGOPRODeck](https://ygoprodeck.com/), down
 | `cards_cardsets.csv` | Which cards were printed in which sets, and at what rarity |
 | `cards_variants.csv` | Alternate artworks, mapping each original card ID to its variant IDs |
 
-Card IDs match the decks in the [Yu-Gi-Oh! Decks](https://huggingface.co/datasets/fferegrino/yugioh-decks) dataset.
+Card IDs match the decks in the [Yu-Gi-Oh! Decks](https://huggingface.co/datasets/feregrino/yugioh-decks) dataset.
 
 Also available on [Kaggle](https://www.kaggle.com/datasets/ioexception/yugioh-cards). The code that builds it lives at [fferegrino/yu-gi-oh](https://github.com/fferegrino/yu-gi-oh).
 
