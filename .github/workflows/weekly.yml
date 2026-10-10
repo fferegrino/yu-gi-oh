@@ -31,14 +31,18 @@ jobs:
     - name: Download dataset
       run: cd data && python ../download.py
     - name: Commit changes
+      id: commit
       run: |
         msg="Updated: $(date +'%Y-%m-%d %H:%M')"
         git config user.email "antonio.feregrino+datasets@gmail.com"
         git config user.name "Antonio Feregrino"
         git add data/
+        changed=false
         if ! git diff --quiet || ! git diff --staged --quiet; then
           git commit -m "$msg"
+          changed=true
         fi
+        echo "changed=$changed" >> "$GITHUB_OUTPUT"
         pushed=0
         for attempt in 1 2 3; do
           if git push; then
@@ -55,6 +59,7 @@ jobs:
         done
         test "$pushed" -eq 1
     - name: Upload data to Kaggle
+      if: steps.commit.outputs.changed == 'true'
       env:
         KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         KAGGLE_USERNAME: ioexception

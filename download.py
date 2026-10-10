@@ -1,4 +1,5 @@
 import hashlib
+import io
 import os
 import sys
 import time
@@ -53,6 +54,8 @@ CARD_COLUMNS = (
 )
 SET_COLUMNS = ["id", "set_name", "set_code", "num_of_cards", "tcg_date"]
 PRINTING_COLUMNS = ["card_id", "set_id", "set_code", "set_rarity", "set_rarity_code"]
+# Page counters move between downloads even when no card, printing, or set changed.
+VOLATILE_CARD_COLUMNS = ("views", "viewsweek", "upvotes", "downvotes")
 
 
 def digest(text):
@@ -216,6 +219,25 @@ def write_csv(frame, path):
     os.replace(temporary, path)
 
 
+def same_table(path, frame, ignore=()):
+    """True when the saved CSV matches this frame, ignoring volatile columns."""
+    if not os.path.exists(path):
+        return False
+    try:
+        current = pd.read_csv(path)
+    except (OSError, ValueError, pd.errors.ParserError):
+        return False
+
+    buffer = io.StringIO()
+    frame.to_csv(buffer, index=False)
+    buffer.seek(0)
+    fresh = pd.read_csv(buffer)
+    for column in ignore:
+        current = current.drop(columns=[column], errors="ignore")
+        fresh = fresh.drop(columns=[column], errors="ignore")
+    return fresh.equals(current)
+
+
 def main():
     session = requests.Session()
     session.headers["User-Agent"] = "fferegrino-yu-gi-oh-dataset"
@@ -263,10 +285,18 @@ def main():
         by=["original", "variant"]
     )
 
-    write_csv(card_sets, "cardsets.csv")
-    write_csv(all_cards, "cards.csv")
-    write_csv(card_set_relation, "cards_cardsets.csv")
-    write_csv(variants, "cards_variants.csv")
+    outputs = [
+        ("cardsets.csv", card_sets, ()),
+        ("cards.csv", all_cards, VOLATILE_CARD_COLUMNS),
+        ("cards_cardsets.csv", card_set_relation, ()),
+        ("cards_variants.csv", variants, ()),
+    ]
+    if all(same_table(path, frame, ignore) for path, frame, ignore in outputs):
+        print("No card updates; leaving the dataset unchanged")
+        return
+
+    for path, frame, _ignore in outputs:
+        write_csv(frame, path)
     temporary_info = "info.txt.tmp"
     with open(temporary_info, "w") as handle:
         handle.write(datetime.now().isoformat())
