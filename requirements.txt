@@ -1,3 +1,2 @@
-kaggle==2.2.4
 pandas==3.0.6
 requests==2.34.2
