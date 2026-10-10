@@ -2,13 +2,24 @@ name: Weekly dataset download
 
 on:
   schedule:
-  - cron: "0 12 * * 0"
+    - cron: "0 12 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-dataset
+  cancel-in-progress: false
 
 jobs:
   weekly:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
     - uses: actions/checkout@v7
+      with:
+        fetch-depth: 0
     - name: Set up Python 3.13
       uses: actions/setup-python@v7
       with:
@@ -21,12 +32,28 @@ jobs:
       run: cd data && python ../download.py
     - name: Commit changes
       run: |
-        msg="Updated: `date +'%Y-%m-%d %H:%M'`"
-        git config --global user.email "antonio.feregrino+datasets@gmail.com"
-        git config --global user.name "Antonio Feregrino"
+        msg="Updated: $(date +'%Y-%m-%d %H:%M')"
+        git config user.email "antonio.feregrino+datasets@gmail.com"
+        git config user.name "Antonio Feregrino"
         git add data/
-        git diff --quiet && git diff --staged --quiet || git commit -m "$msg"
-        git push
+        if ! git diff --quiet || ! git diff --staged --quiet; then
+          git commit -m "$msg"
+        fi
+        pushed=0
+        for attempt in 1 2 3; do
+          if git push; then
+            pushed=1
+            break
+          fi
+          if [ "$attempt" -eq 3 ]; then
+            break
+          fi
+          echo "git push failed (attempt ${attempt}); syncing main and retrying"
+          git fetch origin main
+          git rebase origin/main
+          sleep $((attempt * 5))
+        done
+        test "$pushed" -eq 1
     - name: Upload data to Kaggle
       env:
         KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
