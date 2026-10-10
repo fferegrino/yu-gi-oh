@@ -64,7 +64,7 @@ b731c98702a3a68920d81534d554de8d,Master Collection Volume 1,MC1,6,2004-12-01
 5a8ec4d897cb9a7fc6b66f4012b073e9,Shonen Jump Championship 2004 Prize Card,SJC,1,2004-12-04
 716d915b53d24432fcff73d4993f6c59,Hobby League 1 participation cards C,HL1,2,2005-01-01
 a7027d871401b0828dad46365c94cdc6,"Shonen Jump Vol. 3, Issue 1 promotional card",JMP,1,2005-01-01
-4b3a87e8b78b5b86eab78614dd2589f9,Structure Deck: Deluxe Edition,SD2,2,2005-01-01
+cf44fa9d546794b340b30e686a190a8f,Structure Deck: Deluxe Edition,SD1,2,2005-01-01
 6eec74d3f0e78dd2ca4634abcb3905b6,Structure Deck: Dragon's Roar,SD1,28,2005-01-01
 2c9760c9488051f001876532c761bf15,Structure Deck: Zombie Madness,SD2,28,2005-01-01
 c7ea2769333b0ef812fadac2b3768c1c,Rise of Destiny: Special Edition,RDS,4,2005-02-01
@@ -356,7 +356,7 @@ c1ec5010cd242bfdc8adb23e84f9e5f8,Duel Terminal 3,DT03,100,2010-09-25
 8653613e0da6feb9a46d1554fa36abab,Legendary Collection,LC01,3,2010-10-01
 64947736b740b28b20ad67a866e43b5c,Yu-Gi-Oh! GX Volume 5 promotional card,YG05,1,2010-10-05
 496bd78ff7f6eef0f3c2b1d2b2dc17bf,Structure Deck: Marik (TCG),SDMA,38,2010-10-15
-9f59a6969254d99ba6a358161e3cf677,Yu-Gi-Oh! 5D's Tag Force 5 Promotional Cards,TF05,3,2010-10-26
+c71d78417c3c2f607befbfb343d487db,Yu-Gi-Oh! 5D's Tag Force 5 promotional cards,TF05,3,2010-10-26
 00fb7fd7fa4cfa0a2b2ad79c3aa20b64,"Shonen Jump Vol. 8, Issue 11 promotional card",JUMP,1,2010-11-01
 c978e314535ab4348c731481447cfab7,Collectible Tins 2010 Wave 2,CT07,10,2010-11-02
 91c34f1c8c72ee993d35cc8612a8e325,Starstrike Blast Sneak Peek Participation Card,STBL,1,2010-11-06
@@ -380,7 +380,7 @@ deaaed5c66f60ba4b5bd887f10925ddf,"Shonen Jump Vol. 9, Issue 3 promotional card",
 6f300adf711d2b8a3746b0368db64195,Yu-Gi-Oh! GX Volume 6 promotional card,YG06,1,2011-03-01
 54fec7123a9e729d930de4c102af99df,Dragunity Legion Structure Deck,SDDL,39,2011-03-04
 c2321a878a45f27926629e1f4cf36db2,Storm of Ragnarok: Special Edition,STOR,2,2011-03-22
-08658540b31d1723b9199595b568bdad,Duelist Pack Collection Tin 2011,DPC5,4,2011-03-31
+feffde39530ed7de4c009b2fdadac2c1,Duelist Pack Collection Tin 2011,DPCT,4,2011-03-31
 bc18a8a359710c6180a2e9f7454e084a,"Shonen Jump Vol. 9, Issue 4 promotional card",JUMP,1,2011-04-01
 cd087555a72641223fb2e769010286d1,Turbo Pack: Booster Five,TU05,21,2011-04-09
 9dda54b2ec9176b5ae4605098b46f040,Hidden Arsenal 4: Trishula's Triumph,HA04,60,2011-04-15
@@ -936,7 +936,12 @@ e42b9c3f699480bb5c2d729d15cfe5b6,Maze of Memories,MAZE,67,2023-03-09
 74bedc78de2db0de62a39934a0f392cd,Speed Duel Tournament Pack 5,STP5,35,2023-03-09
 610fa05ae2b971af95aa19408657ad7b,Speed Duel GX: Duelists of Shadows,SGX3,221,2023-03-30
 cc2a17385d5b1a98a35e5eb706612260,The Lost Art Promotion 2023 D,LART,1,2023-04-01
+cb8a71db10ddad32c0e11dc2546864fb,Dark Crisis (25th Anniversary Edition),DCR,1,2023-04-20
+6ba1535c0886b22096fdb5c28918dc5c,Legend of Blue Eyes White Dragon (25th Anniversary Edition),LOB,14,2023-04-20
 c07f4b4add3dadd8ead9078cd2b63f72,Legendary Collection: 25th Anniversary Edition,LC01,3,2023-04-20
+1fa3c780863db6091c235867539773ca,Metal Raiders (25th Anniversary Edition),MRD,14,2023-04-20
+cfbfdb4fd6f7de2e195084ac2580fd4d,Pharaoh's Servant (25th Anniversary Edition),PSV,1,2023-04-20
+be34671ff4f1356e17a9e90ee972f234,Spell Ruler (25th Anniversary Edition),SRL,14,2023-04-20
 972c4615e3dcbde70cacac7c9f697ad6,The Lost Art Promotion 2023 E,LART,1,2023-05-01
 92e19195201bf4a2f03bca4375c9a2a9,Cyberstorm Access,CYAC,101,2023-05-04
 cb212e505ea583df553800829f724a73,The Lost Art Promotion 2023 F,LART,1,2023-06-01
@@ -957,11 +962,12 @@ ca15fef067d241a83dd8016ef0600f91,Structure Deck: The Crimson King,SDCK,49,2023-0
 a90c892e4f4b359755c22b0d2ecdcc3d,Yu-Gi-Oh! Championship Series 2023 prize card,YCSW,1,2023-10-01
 e606bbaf04b9c79f2b0504c7ea01c580,Age of Overlord,AGOV,101,2023-10-19
 0f9b72aaa5f16958bafed45b15ef3bf6,OTS Tournament Pack 23,OP23,27,2023-10-25
-a5cea1e77acd3ef56295a1f13c175de9,25th Anniversary Rarity Collection,RA01,78,2023-11-02
+a5cea1e77acd3ef56295a1f13c175de9,25th Anniversary Rarity Collection,RA01,79,2023-11-02
 a0431d1e982ccf06eb9eaa54f9334dd4,Valiant Smashers,VASM,60,2023-11-16
 b720717a4c88e63a5d561f2cc18689d1,Structure Deck: Fire Kings,SR14,48,2023-12-07
+edd63fdcc9db3fa29b394a9d77771013,The Lost Art Promotion 2024,LART,5,2024-01-01
 4962ce2eefdcb976ce42041217783326,Maze of Millennia,MZMI,85,2024-01-18
-0213aa84df8db3f27ca88f5df1db0887,2-Player Starter Set,STAS,88,2024-01-26
+f1182329a942291f28342309d660276c,2-Player Starter Set,STAX,88,2024-01-26
 25952fd36e0938a5d447087427aa78cd,Phantom Nightmare,PHNI,101,2024-02-08
 f90aeb9693b42a2a0ebd4e66f41bde66,Adidas collaboration card,ADC1,1,2024-02-14
 05aeb56737ca1678d2fb1d6dbfcd1e92,OTS Tournament Pack 24,OP24,27,2024-02-14
@@ -969,10 +975,62 @@ f90aeb9693b42a2a0ebd4e66f41bde66,Adidas collaboration card,ADC1,1,2024-02-14
 3f21534f4cb83b201123e215c240ae85,The Lost Art Promotion 2023 G,LART,1,2024-02-14
 a958f842061f0c256334ebf7813f3cb5,Battles of Legend: Chapter 1,BLC1,163,2024-02-22
 1748ea403c713a6b876d9bc26783134d,25th Anniversary Ultimate Kaiba Set,KC01,62,2024-03-01
-e2bc1e5f105b8b8d9ad5da485b6717d7,Legacy of Destruction,LEDE,86,2024-04-25
+e2bc1e5f105b8b8d9ad5da485b6717d7,Legacy of Destruction,LEDE,101,2024-04-25
 6d2426abe71ef055d9081f13500b160e,The Lost Art Promotion 2024 A,LART,1,2024-05-22
+a8b5752d0ef0dd22a5b2639413eb66ae,25th Anniversary Rarity Collection II,RA02,79,2024-05-23
 647de2b20c9fe9eb747ef1e0198f5c2f,OTS Tournament Pack 25,OP25,27,2024-06-12
 e55036b1e8130a54ff0ab77e402e5d30,The Lost Art Promotion 2024 B,LART,1,2024-06-19
-9fbc2ae81027208001000dfd2a7d701e,Battles of Legend: Terminal Revenge,BLTR,117,2024-06-20
+9fbc2ae81027208001000dfd2a7d701e,Battles of Legend: Terminal Revenge,BLTR,118,2024-06-20
 c471deb2c4261aaec2a3789e6923603a,The Lost Art Promotion 2024 C,LART,1,2024-07-17
-c67dde397462bc8fd39202d742a53bb9,The Infinite Forbidden,INFO,100,2024-07-18
+c67dde397462bc8fd39202d742a53bb9,The Infinite Forbidden,INFO,101,2024-07-18
+56fcd888fc5d41ed4fb58d2be6d68fe5,25th Anniversary Tin: Dueling Mirrors,MP24,398,2024-09-19
+c75ae862c127aa6b75a50164b3aa197f,Rage of the Abyss,ROTA,101,2024-10-10
+e7bbffe64148800a4ad612405dc0e80d,OTS Tournament Pack 26,OP26,29,2024-10-17
+6a464dad311aaa457912082cfca83af8,Quarter Century Bonanza,RA03,276,2024-11-07
+766be9b13a1d20c23748ffcf15a20cb1,Crossover Breakers,CRBR,60,2024-12-05
+cc118c283ad3d9350feed2b170a073d8,The Lost Art Promotion 2024 H,LART,1,2024-12-18
+b1898c80824b60c34268b3b230312a97,Supreme Darkness,SUDA,101,2025-01-23
+0b107c2f76365ab188086d15026c222f,Structure Deck: Blue-Eyes White Destiny,SDWD,43,2025-02-13
+88150c95e90e9f8de0b7c3996332ccb0,OTS Tournament Pack 27,OP27,27,2025-02-27
+67c452e26d7a4ad5598e9d43f26164f2,Maze of the Master,MZTM,111,2025-03-13
+3d171bab1c7540a797858e289f12ef86,Quarter Century Stampede,RA04,296,2025-04-10
+50105bf090e94c2c8d2d9ab0198bd7f8,Alliance Insight,ALIN,100,2025-05-01
+945123c9b861f38d55fe7079fe059d4e,OTS Tournament Pack 28,OP28,27,2025-06-18
+c88a2f6f470bb7b72c07d0210837c5bc,Duelist's Advance,DUAD,48,2025-07-03
+0ae8d392c2f48e66004765c97166e5f5,The Lost Art Promotion 2025 A,LART,1,2025-07-16
+04ce5d69ec06a88db9061bf14a2b9fee,Yu-Gi-Oh! Championship Series 2025 prize cards,25YC,13,2025-07-27
+c397dff4fb77fb8b3dfae01bf503d63f,Justice Hunters,JUSH,60,2025-07-31
+893f31a08913dd0acbd5a5d2e32c9030,The Lost Art Promotion 2025 B,LART,1,2025-08-20
+149fcaa7e47675ada0895671dafe49a8,Battles of Legend: Monster Mayhem,BLMM,177,2025-08-28
+9a50e0c505868f281214ed8c61a5221e,Limited Pack World Championship 2025,25LP,21,2025-08-30
+6250bf250daae22d30b69f7fbdbfe942,WCS 2025 Limited Pack,25LP,1,2025-08-30
+70683bb3e51ff66b72690e6596293c24,2025 Mega-Pack Tin,MP25,450,2025-09-04
+fc651cbe89cea929c96fc9788c0929bf,The Lost Art Promotion 2025 C,LART,1,2025-09-17
+45fbfcc478e6372f06d1c354f5f6ed3f,Doom of Dimensions,DOOD,101,2025-09-25
+db8797de71f83533dc140b2dd6c3bc54,OTS Tournament Pack 29,OP29,27,2025-10-15
+67a068a7635cb394e6cd2f813879081d,The Lost Art Promotion 2025 D,LART,1,2025-10-15
+8791f4e5d102889adc3993844e396d67,THE CHRONICLES DECK: The Fallen & The Virtuous (All-Foil Edition),CH01,50,2025-10-24
+a529777abb129ea2d36074017ac57c3f,Legendary 5D&apos;s Decks,L5DD,111,2025-11-06
+7aed6f3f3e6d751cd52879c4098a1f8d,The Lost Art Promotion 2025 E,LART,1,2025-11-19
+8e59c7c7d8190a225c52d3d4d6c04148,Phantom Revenge,PHRE,60,2025-12-04
+fc5709f3ab2d22e191edd64fcef82fbe,The Lost Art Promotion 2025 F,LART,1,2025-12-17
+9dc5505878d651ab333eb39e4c1313d6,THE CHRONICLES DECK: Spirit Charmers (All-Foil Edition),CH02,50,2026-01-22
+071d26522564c7f91382c64d7bc47fbf,Burst Protocol,BPRO,101,2026-02-05
+e3e8627998ad842f9cf9f9aa555def74,OTS Tournament Pack 30,OP30,27,2026-02-12
+1e8f803d03ce5e8829c85f8aad0ae713,Maze of Muertos,MZMU,127,2026-02-19
+edb32cbeda4e999707b5bad0ad160ece,Rarity Collection 5,RA05,150,2026-04-09
+625b4f596ecbd3e18324e3aaeeb5c2f9,Legendary Modern Decks 2026,L26D,111,2026-04-23
+8b4407d9d1095786225ce294789573c4,Blazing Dominion,BLZD,101,2026-05-07
+5b58d28f385a1e802b72c88a21560d42,Battles of Legend: Glorious Gallery,BLGG,146,2026-06-04
+e798d9d89425ce0a5dcabdab7a706e2f,Ultimate Tournament Pack 1,UP01,49,2026-06-18
+9045bbd110ee26b752fd92fa5a162e2a,Chaos Origins,CORI,100,2026-07-02
+e7cb4fb5007eaab8d093eeb893ba17fa,Winner's Pack 2026-2027,WI26,40,2026-07-15
+bf0d3c12f7ff4e6cf8c8fdb561e1364f,THANK YOU PACK,TYP1,26,2026-07-22
+41593b3c6f864bf6f36b394f66852653,Legendary Arc-V Decks,LAVD,115,2026-08-06
+29e55b9ec9ab96af90ee9bacdb3f4953,Magnificent Monsters,MAMO,126,2026-09-04
+da66d6bc8f001b11d3e2207c6a1c460e,Beyond the Brave,BETB,100,2026-10-08
+46c20bc0af0e364b73cbdfdcb90ed2d9,Magnificent Maestros,MAMS,24,2026-11-12
+ef4495fa135025e79d7e91a4c462013d,Crocs collaboration card,CRC1,1,
+82dcbb3a453fe723f567a01fc0d3fb17,EFootball collaboration cards,EFC1,1,
+7d385c5429e57c31cf22744c5e1cc2f6,Limited Pack World Championship 2026,26LP,21,
+5df1e496412c6daeec08a483784b6d08,Nike collaboration cards,NKC1,2,
