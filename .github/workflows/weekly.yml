@@ -4,9 +4,15 @@ on:
   schedule:
     - cron: "0 12 * * 0"
   workflow_dispatch:
+    inputs:
+      source:
+        description: Where to read the current dataset from
+        type: choice
+        options: [huggingface, kaggle]
+        default: huggingface
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: weekly-dataset
@@ -18,49 +24,29 @@ jobs:
     timeout-minutes: 30
     steps:
     - uses: actions/checkout@v7
+    - uses: fferegrino/dataset-sync/fetch@v1
       with:
-        fetch-depth: 0
+        # Scheduled runs have no inputs, so they always read from Hugging Face.
+        from: ${{ inputs.source || 'huggingface' }}
+        huggingface-dataset: feregrino/yugioh-cards
+        kaggle-dataset: ioexception/yugioh-cards
+        kaggle-username: ioexception
+        kaggle-key: ${{ secrets.KAGGLE_KEY }}
     - name: Set up Python 3.13
       uses: actions/setup-python@v7
       with:
         python-version: "3.13"
-    - name: Install dependencies
+    - name: Download cards
       run: |
         python -m pip install --upgrade pip==26.2.1
         pip install -r requirements.txt
-    - name: Download dataset
-      run: cd data && python ../download.py
-    - name: Commit changes
-      id: commit
-      run: |
-        msg="Updated: $(date +'%Y-%m-%d %H:%M')"
-        git config user.email "antonio.feregrino+datasets@gmail.com"
-        git config user.name "Antonio Feregrino"
-        git add data/
-        changed=false
-        if ! git diff --quiet || ! git diff --staged --quiet; then
-          git commit -m "$msg"
-          changed=true
-        fi
-        echo "changed=$changed" >> "$GITHUB_OUTPUT"
-        pushed=0
-        for attempt in 1 2 3; do
-          if git push; then
-            pushed=1
-            break
-          fi
-          if [ "$attempt" -eq 3 ]; then
-            break
-          fi
-          echo "git push failed (attempt ${attempt}); syncing main and retrying"
-          git fetch origin main
-          git rebase origin/main
-          sleep $((attempt * 5))
-        done
-        test "$pushed" -eq 1
-    - name: Upload data to Kaggle
-      if: steps.commit.outputs.changed == 'true'
-      env:
-        KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
-        KAGGLE_USERNAME: ioexception
-      run: python upload_kaggle.py
+        cd data && python ../download.py
+    - uses: fferegrino/dataset-sync/publish@v1
+      with:
+        huggingface-dataset: feregrino/yugioh-cards
+        huggingface-card: dataset-card.md
+        kaggle-dataset: ioexception/yugioh-cards
+        kaggle-metadata: dataset-metadata.json
+        huggingface-token: ${{ secrets.HF_TOKEN }}
+        kaggle-username: ioexception
+        kaggle-key: ${{ secrets.KAGGLE_KEY }}
